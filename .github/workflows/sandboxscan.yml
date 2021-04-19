@@ -34,14 +34,14 @@ jobs:
         path: target/verademo.war
             
     # Upload and Scan with Veracode Sandbox
-    - name: Veracode Upload and Scan Action Step
+    - name: Veracode Upload and Scan Action Step - Sandbox
       uses: veracode/veracode-uploadandscan-action@master
       id: upload_and_scan
      with:
         appname: 'Verademo'
+	sandboxname: 'GIT'
         version: '${{ github.run_id }}'
         filepath: 'target/verademo.war'
         vid: '${{ secrets.VERACODE_API_ID }}'
         vkey: '${{ secrets.VERACODE_API_KEY }}'
-	sandboxname: 'GIT'
         scantimeout: 15
