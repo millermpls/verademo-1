@@ -43,5 +43,5 @@ jobs:
         filepath: 'target/verademo.war'
         vid: '${{ secrets.VERACODE_API_ID }}'
         vkey: '${{ secrets.VERACODE_API_KEY }}'
-	sandboxname: 'github'
+        sandboxname: 'github'
         scantimeout: 15
