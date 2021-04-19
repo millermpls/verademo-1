@@ -36,7 +36,7 @@ jobs:
     # Upload and Scan with Veracode Sandbox
     - name: Veracode Upload and Scan Action Step - Sandbox
       uses: veracode/veracode-uploadandscan-action@master
-      id: upload_and_scan
+      id: upload_and_scan_sandbox
      with:
         appname: 'Verademo'
 	sandboxname: 'GIT'
