@@ -40,7 +40,7 @@ jobs:
       with:
         appname: 'Verademo'
 	createsandbox: 'true'
-	sandboxname: 'GIT'
+	sandboxname: 'GITHUB'
         version: '${{ github.run_id }}'
         filepath: 'target/verademo.war'
         vid: '${{ secrets.VERACODE_API_ID }}'
