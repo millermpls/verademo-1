@@ -44,4 +44,4 @@ jobs:
         vid: '${{ secrets.VERACODE_API_ID }}'
         vkey: '${{ secrets.VERACODE_API_KEY }}'
 	sandboxname: 'GIT'
-        scantimeout: 15
+        scantimeout: 20
